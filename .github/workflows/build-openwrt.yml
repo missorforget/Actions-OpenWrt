@@ -39,7 +39,7 @@ jobs:
     strategy:
         matrix:
           REPO_BRANCH:
-            - istoreos-22.03
+            - lean-lede
           ARCHITECTURE:
             - x86
             - r619ac
