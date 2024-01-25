@@ -42,7 +42,7 @@ mkdir sms-tool
 mkdir luci-app-sms-tool
 cp -rf ../../Modem-Support/sms-tool/* sms-tool
 cp -rf ../../Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
-cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* luci-app-sms-tool
+cp -rf ../../MyConfig/configs/lede/general/applications/luci-app-sms-tool/* luci-app-sms-tool
 
 # 5G模组信息插件+AT工具
 mkdir luci-app-modem
