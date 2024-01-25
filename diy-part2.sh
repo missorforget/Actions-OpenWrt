@@ -28,13 +28,13 @@ mkdir package/community
 pushd package/community
 
 # 5G通信模组拨号工具
-mkdir quectel_QMI_WWAN
-mkdir quectel_cm_5G
-mkdir quectel_MHI
+# mkdir quectel_QMI_WWAN
+# mkdir quectel_cm_5G
+# mkdir quectel_MHI
 # mkdir luci-app-hypermodem
-cp -rf ../../Modem-Support/quectel_QMI_WWAN/* quectel_QMI_WWAN
-cp -rf ../../Modem-Support/quectel_cm_5G/* quectel_cm_5G
-cp -rf ../../Modem-Support/quectel_MHI/* quectel_MHI
+# cp -rf ../../Modem-Support/quectel_QMI_WWAN/* quectel_QMI_WWAN
+# cp -rf ../../Modem-Support/quectel_cm_5G/* quectel_cm_5G
+# cp -rf ../../Modem-Support/quectel_MHI/* quectel_MHI
 # cp -rf ../../Modem-Support/luci-app-hypermodem/* luci-app-hypermodem
 
 # 5G模组短信插件
