@@ -17,12 +17,12 @@
 mkdir Modem-Support
 pushd Modem-Support
 git clone --depth=1 https://github.com/Siriling/5G-Modem-Support .
-rm -rf ../package/wwan/driver/quectel_QMI_WWAN/*
-rm -rf ../package/wwan/app/quectel_cm_5G/*
-rm -rf ../package/wwan/driver/quectel_MHI/*
-cp -rf quectel_QMI_WWAN ../package/wwan/driver/quectel_QMI_WWAN
-cp -rf quectel_cm_5G ../package/wwan/app/quectel_cm_5G
-cp -rf quectel_MHI ../package/wwan/driver/quectel_MHI
+rm -rf ../package/wwan/driver/quectel_QMI_WWAN
+rm -rf ../package/wwan/app/quectel_cm_5G
+rm -rf ../package/wwan/driver/quectel_MHI
+cp -rf quectel_QMI_WWAN ../package/wwan/driver/
+cp -rf quectel_cm_5G ../package/wwan/app/
+cp -rf quectel_MHI ../package/wwan/driver/
 popd
 
 mkdir MyConfig
