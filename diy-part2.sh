@@ -17,9 +17,12 @@
 mkdir Modem-Support
 pushd Modem-Support
 git clone --depth=1 https://github.com/Siriling/5G-Modem-Support .
-cp -rf ./quectel_QMI_WWAN/* ../package/wwan/driver/quectel_QMI_WWAN
-cp -rf ./quectel_cm_5G/* ../package/wwan/app/quectel_cm_5G
-cp -rf ./quectel_MHI/* ../package/wwan/driver/quectel_MHI
+rm -rf ../package/wwan/driver/quectel_QMI_WWAN/*
+rm -rf ../package/wwan/app/quectel_cm_5G/*
+rm -rf ../package/wwan/driver/quectel_MHI/*
+cp -rf ../package/wwan/driver/quectel_QMI_WWAN
+cp -rf ../package/wwan/app/quectel_cm_5G
+cp -rf ../package/wwan/driver/quectel_MHI
 popd
 
 mkdir MyConfig
@@ -65,7 +68,7 @@ CONFIG_PACKAGE_luci-app-sms-tool=y
 # 5G模组信息插件+AT工具
 # CONFIG_PACKAGE_luci-app-cpe=y
 # CONFIG_PACKAGE_sendat=y
-# CONFIG_PACKAGE_luci-app-modem=y
+CONFIG_PACKAGE_luci-app-modem=y
 
 # QMI拨号工具（移远，广和通）
 # CONFIG_PACKAGE_quectel-CM-5G=y
