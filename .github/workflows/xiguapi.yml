@@ -79,7 +79,8 @@ jobs:
 
     - name: Install feeds
       run: |
-        rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd-alt,miniupnpd-iptables,wireless-regdb}
+        rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd-alt,miniupnpd-iptables,wireless-regdb,sms-tool,luci-app-sms-tool}
+        rm -rf feeds/luci/applications/luci-app-socat
         cd openwrt && ./scripts/feeds install -a
 
     - name: Load custom configuration
