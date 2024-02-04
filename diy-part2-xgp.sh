@@ -13,6 +13,12 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
+mkdir lean
+pushd lean
+git clone --depth=1 https://github.com/coolsnowwolf/lede .
+rm -rf ../package/libs/openssl
+cp -rf ./package/libs/openssl ../package/libs/
+popd
 
 mkdir Modem-Support
 pushd Modem-Support
