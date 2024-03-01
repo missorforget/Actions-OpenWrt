@@ -12,5 +12,5 @@ src-git helloworld https://github.com/fw876/helloworld.git
 #src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;luci
 src-git nezha https://github.com/Erope/openwrt_nezha
 
-#src-git smpackage https://github.com/kenzok8/small-package
-src-git kiddin9 https://github.com/kiddin9/openwrt-packages
+src-git smpackage https://github.com/kenzok8/small-package
+#src-git kiddin9 https://github.com/kiddin9/openwrt-packages
